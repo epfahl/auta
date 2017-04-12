@@ -1,0 +1,1 @@
+from auta import init, run
