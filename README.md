@@ -1,4 +1,4 @@
-# Auta
+# auta
 
 A finite state **aut**om**a**ton library for 1D time series data.  *Auta tells you what you oughta do next.*
 
