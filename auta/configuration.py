@@ -28,7 +28,7 @@ def _merge_with_default(updates, default=DEFAULT_CONFIG):
 
     Note
     ----
-    cytoolz.merge does not recursively merge nested dicts, hence the
+    toolz.merge does not recursively merge nested dicts, hence the
     multiple merge steps.
     """
     cfg = tz.merge(default, updates)
