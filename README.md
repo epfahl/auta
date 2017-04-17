@@ -167,7 +167,7 @@ Now that we have an initiazlied FSM, let's see how we supply new data and previo
 
 That looks right.
 
-Auta provides a `run` function that carries out the above steps for each element in an iterable of normalized time series data.  Here's some example data to play with: 
+Auta provides a `run` function that carries out the above steps for each element in an iterable of normalized time series data.Here's some example data to play with: 
 
 ```python
 series = [
@@ -283,4 +283,8 @@ The result of the `run` function is
   'time': 12}]
 ```
 
-Woohoo!
+Woohoo!  This data matches the above figure. 
+
+### Next Steps
+
+It would be straightforward to wrap around or build on top of the basic state manager provided by Auta.  State data could be persisted in your favorite DB.  Events could be generated based on state transitions.  From state and event data, one could derive frequency or episode-duration statistics.   
