@@ -167,7 +167,7 @@ Now that we have an initiazlied FSM, let's see how we supply new data and previo
 
 That looks right.
 
-Auta provides a `run` function that processes each element in an iterable of normalized time series data to yield a new state and reset the state to the new state before the next iteration.  Here's some example data to play with: 
+Auta provides a `run` function that carries out the above steps for each element in an iterable of normalized time series data.  Here's some example data to play with: 
 
 ```python
 series = [
@@ -195,8 +195,9 @@ This data, along with the expected color-coded status for each point, is illustr
 Using the above `normalize` function, we obtain the normalized series:
 
 ```python
->>> map(lambda d: normalize(d, fsm.config['time_key']), srs)
-series_norm = [{'time': 0, 'value': 0},
+>>> series_norm = map(lambda d: normalize(d, fsm.config['time_key']), srs)
+>>> series_norm
+[{'time': 0, 'value': 0},
  {'time': 1, 'value': 0},
  {'time': 2, 'value': 0},
  {'time': 3, 'value': 1},
