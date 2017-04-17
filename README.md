@@ -26,7 +26,7 @@ Before we initiazize Auta, it's important to distinguish between three key varia
 ```
 value: a normalized, often discrete, encoding of the non-time data in the raw time series
 
-status: the discrete names of the nodes in the state machine (e.g., 'low'/'high', 'normal'/'warning'/'error')
+status: the discrete names of the nodes in the state machine (e.g., 'low'/'high')
 
 state: the complete description of the state machine at an instant
 ```
