@@ -141,7 +141,7 @@ Each initialized Auta FSM has a name (optional), several data attributes, and an
  'time': {'nullable': True, 'required': True, 'type': 'integer'}}
 ```
 
-These are [Cerberus](http://docs.python-cerberus.org/) schemas.  Cerberus, a Python data validation package, is used to validate the input data and state against the corresponding schema, where each schema is generated based on the supplied configuration.  
+These are [Cerberus](http://docs.python-cerberus.org/) schemas.  Cerberus is a data validation package that is used to validate the input data and state against the corresponding schema, where each schema is generated based on the supplied configuration.
 
 ### Execution
 
@@ -165,7 +165,7 @@ Now that we have an initiazlied FSM, let's see how we supply new data and previo
  'time': 0}
 ```
 
-That looks right.
+That looks right.  We haven't discuessed `episode_status_max` because it's not used in this example state machine.  `episode_status_max` follows the same update rules as `episode_start` and `episode_end`, and is intended to track the *most severe* status in a given episode when a notion of status severity is applicable.   
 
 Auta provides a `run` function that carries out the above steps for each element in an iterable of normalized time series data.Here's some example data to play with: 
 
@@ -283,8 +283,8 @@ The result of the `run` function is
   'time': 12}]
 ```
 
-Woohoo!  This data matches the above figure. 
+Woohoo!  This data matches the above figure!   
 
 ### Next Steps
 
-It would be straightforward to wrap around or build on top of the basic state manager provided by Auta.  State data could be persisted in your favorite DB.  Events could be generated based on state transitions.  From state and event data, one could derive frequency or episode-duration statistics.   
+It would be straightforward to build on top of the basic state manager provided by Auta.  State data could be persisted in your favorite DB.  Events could be generated based on state transitions.  From state and event data, one could derive statistics about event frequency or episode duration.   

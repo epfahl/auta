@@ -89,4 +89,8 @@ def state_schema(cfg):
         'episode_end': {
             'type': cfg['time_type'],
             'required': True,
+            'nullable': True},
+        'episode_status_max': {
+            'allowed': cfg['status_values'],
+            'required': False,
             'nullable': True}}
