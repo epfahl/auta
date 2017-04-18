@@ -137,6 +137,7 @@ Each initialized Auta FSM has a name (optional), several data attributes, and an
 >>> fsm.state_schema
 {'episode_end': {'nullable': True, 'required': True, 'type': 'integer'},
  'episode_start': {'nullable': True, 'required': True, 'type': 'integer'},
+ 'episode_status_max': {'allowed': ['low', 'high'], 'nullable': True, 'required': False},
  'status': {'allowed': ['low', 'high'], 'required': True},
  'time': {'nullable': True, 'required': True, 'type': 'integer'}}
 ```
