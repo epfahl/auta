@@ -288,4 +288,6 @@ Woohoo!  This data matches the above figure!
 
 ### Next Steps
 
-It would be straightforward to build on top of the basic state manager provided by Auta.  State data could be persisted in your favorite DB.  Events could be generated based on state transitions.  From state and event data, one could derive statistics about event frequency or episode duration.   
+It would be straightforward to build on top of the basic state manager provided by Auta.  State data could be persisted in your favorite DB.  Events could be generated based on state transitions.  From state and event data, one could derive statistics about event frequency or episode duration.
+
+There are more things to discuss regarding Auta's internal mechanics, its limitations, safety precautions, as well as how we might handle more sophisticated state machines.  Stay tuned as  Auta and these docs evolve.     
