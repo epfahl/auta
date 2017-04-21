@@ -109,7 +109,7 @@ transitions = [
 ]
 ```
 
-A trigger function consumes new, normalized time series data and the previous state, and emits True (triggered) or False (not triggered).  Update rules for episodes are given as data, since there are on three possibilities: 
+A trigger function consumes new, normalized time series data and the previous state, and emits True (triggered) or False (not triggered).  Update rules for episodes are given as data, since there are only three possibilities: 
 
 ```
 initialize: set to the value in the initial state
